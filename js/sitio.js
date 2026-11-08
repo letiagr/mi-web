@@ -38,7 +38,7 @@
       <img class="pie-logo" src="img/logo-tinta.png" alt="LA Art" width="281" height="218" loading="lazy">
       <p class="pie-lema">Materia | tiempo | silencio<br>Pieles que se transforman</p>
       <nav class="pie-nav" aria-label="Pie de página">${enlaces}</nav>
-      <p class="pie-red"><a href="${IG}" target="_blank" rel="noopener">@${SITIO.instagram}</a></p>
+      <p class="pie-red">${SITIO.email ? `<a href="mailto:${SITIO.email}">${SITIO.email}</a><br>` : ''}<a href="${IG}" target="_blank" rel="noopener">@${SITIO.instagram}</a></p>
       <p class="pie-legal">© ${new Date().getFullYear()} Leticia de Amescua<br>Fotografías de Casa Chamberí: <a href="https://www.instagram.com/albavigaray/" target="_blank" rel="noopener">Alba Vigaray</a></p>
     </footer>`);
 
@@ -246,8 +246,8 @@
     else if (MOTIVOS[q.get('motivo')]) form.elements.mensaje.value = MOTIVOS[q.get('motivo')];
     const conCorreo = Boolean(SITIO.email);
     $('[data-enviar]', form).textContent = conCorreo ? 'Enviar por correo' : 'Enviar por Instagram';
-    $('[data-nota]', form).textContent = conCorreo
-      ? 'Se abrirá tu correo con el mensaje preparado.'
+    $('[data-nota]', form).innerHTML = conCorreo
+      ? `Se abrirá tu correo con el mensaje preparado. También puedes escribir a <a href="mailto:${SITIO.email}">${SITIO.email}</a>.`
       : 'Copiamos tu mensaje y abrimos Instagram para que lo pegues.';
 
     form.addEventListener('submit', async (e) => {

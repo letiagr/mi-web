@@ -8,7 +8,7 @@
 const SITIO = {
   // Escribe aquí el correo que recibirá las consultas, por ejemplo 'hola@tudominio.com'.
   // Mientras esté vacío, el formulario envía a tus mensajes de Instagram.
-  email: '',
+  email: 'info@leticiadeamescua.com',
   instagram: 'leticiadeamescua_art',
 };
 
@@ -19,6 +19,8 @@ const OBRAS = [
   { ...SILENCIO, id: 'pliegue', nombre: 'Pliegue', ancho: 120, alto: 180, precio: 3500, estado: 'disponible',
     concepto: 'Delicadeza sostenida por un nudo constructivo',
     alt: 'Pliegue: superficie ocre con pliegues verticales, colgada en un muro gris' },
+  { ...SILENCIO, id: 'pliegue-ii', nombre: 'Pliegue II', ancho: 120, alto: 180, precio: 3500, estado: 'disponible',
+    alt: 'Pliegue II: superficie rojo óxido con pliegues verticales y una junta en relieve a la derecha' },
   { ...SILENCIO, id: 'soporte', nombre: 'Soporte', ancho: 100, alto: 120, precio: 1450, estado: 'disponible',
     concepto: 'Recoge el instante en que el muro se enfrenta a su viga estructural',
     alt: 'Soporte: superficie blanca rugosa atravesada por una línea horizontal oscura' },
@@ -31,6 +33,8 @@ const OBRAS = [
   { ...SILENCIO, id: 'junta', nombre: 'Junta', ancho: 100, alto: 120, precio: 1450, estado: 'no-disponible',
     concepto: 'La huella de un encuentro entre dos muros',
     alt: 'Junta: superficie naranja dividida por una junta vertical blanca en relieve' },
+  { ...SILENCIO, id: 'hendidura', nombre: 'Hendidura', ancho: 100, alto: 120, precio: 1450, estado: 'no-disponible',
+    alt: 'Hendidura: superficie verde oliva con una junta vertical en relieve que baja desde el borde superior' },
   { ...SILENCIO, id: 'contencion', nombre: 'Contención', ancho: 100, alto: 120, precio: 1450, estado: 'no-disponible',
     concepto: 'Desgaste sobre la piel del muro',
     alt: 'Contención: superficie terracota con marcas horizontales' },
@@ -88,11 +92,13 @@ const COLECCIONES = {
 const SALA = 'en la exposición de Casa Chamberí';
 const GALERIA = {
   pliegue: [{ src: 'sala/pliegue.jpg', alt: `Pliegue ${SALA}` }],
+  'pliegue-ii': [{ src: 'sala/pliegue-ii.jpg', pos: '78% 50%', alt: 'Pliegue II apoyado sobre un muro de ladrillo encalado, en un comedor' }],
   soporte: [{ src: 'fondo/sala-grieta-soporte.jpg', pos: '63% 40%', alt: `Soporte junto a Grieta ${SALA}` }],
   grieta: [{ src: 'fondo/sala-grieta-soporte.jpg', pos: '38% 40%', alt: `Grieta junto a Soporte ${SALA}` }],
   fisura: [{ src: 'fondo/fisura-sala.jpg', pos: '30% 50%', alt: `Fisura ${SALA}` }],
   encuentro: [{ src: 'fondo/encuentro-sala.jpg', pos: '50% 25%', alt: `Encuentro ${SALA}` }],
   junta: [{ src: 'sala/junta.jpg', alt: `Junta ${SALA}` }, { src: 'fondo/textura-junta.jpg', alt: 'Detalle de la textura de Junta' }],
+  hendidura: [{ src: 'sala/hendidura.jpg', alt: 'Hendidura sobre un sofá blanco, en un salón' }],
   contencion: [{ src: 'sala/contencion.jpg', alt: `Contención ${SALA}` }, { src: 'fondo/textura-contencion.jpg', alt: 'Detalle de la textura de Contención' }],
   'velos-blanco': [{ src: 'sala/velos-blanco.jpg', alt: `Serie Velos en blanco ${SALA}` }],
   'velos-amarillo': [{ src: 'sala/velos-amarillo.jpg', alt: `Serie Velos en amarillo ${SALA}` }],
@@ -102,7 +108,7 @@ const GALERIA = {
 
 /* Press. Añade url: 'https://…' a cada revista para que su nombre sea un enlace. */
 const PRENSA = [
-  { nombre: 'El Mueble' },
-  { nombre: 'Manera Magazine' },
-  { nombre: 'AD' },
+  { nombre: 'El Mueble', url: 'https://www.hocvoloarquitectura.com/_files/ugd/cde4f7_97903f04c3224f09be8edfec58d642aa.pdf' },
+  { nombre: 'Manera Magazine', url: 'https://maneramagazine.es/interiorismo/hoc-volo-reforma-piso-barrio-salamanca-madrid-anos-20/' },
+  { nombre: 'AD', url: 'https://www.revistaad.es/galerias/agenda-fomo-novedades-muy-ad-que-no-puedes-perderte-esta-semana-13-marzo' },
 ];
