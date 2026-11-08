@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Leticia de Amescua</title>
+<meta name="description" content="Escribe a Leticia de Amescua para preguntar por una obra o recibir el catálogo.">
+<link rel="icon" href="img/logo-tinta.png">
+<link rel="stylesheet" href="css/estilos.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-pagina="contacto" data-transparente>
+<main id="contenido" class="foto-pagina contacto-pagina">
+  <img class="fondo" src="img/fondo/sala-completa.jpg" alt="Sala de Casa Chamberí con tres obras de la colección Silencio" style="--pos:30% 50%">
+  <section class="panel">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h1 class="titulo-m">Hablemos de una pieza</h1>
+    </div>
+    <form class="formulario" data-form>
+      <div class="campo"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required></div>
+      <div class="campo"><label for="f-correo">Correo</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+      <div class="campo"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="mensaje" required></textarea></div>
+      <p class="nota" data-nota></p>
+      <button class="enlace" type="submit" data-enviar>Enviar</button>
+      <p class="aviso" role="status" data-aviso></p>
+    </form>
+  </section>
+</main>
+<script src="js/datos.js"></script>
+<script src="js/sitio.js"></script>
+</body>
+</html>

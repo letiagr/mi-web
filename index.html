@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leticia de Amescua | Materia, tiempo, silencio</title>
+<meta name="description" content="Leticia de Amescua, arquitecta y artista. Paisajes matéricos que evocan fachadas desgastadas, restos de estructuras y huellas del tiempo.">
+<link rel="icon" href="img/logo-tinta.png">
+<link rel="stylesheet" href="css/estilos.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-pagina="inicio" data-transparente>
+<main id="contenido">
+
+  <section class="hero" aria-label="Obra destacada">
+    <div class="hero-lamina activa">
+      <picture>
+        <source media="(min-width: 861px)" srcset="img/hero/soporte.jpg">
+        <img src="img/obra/soporte.jpg" alt="Soporte, colgado en un muro amplio y vacío">
+      </picture>
+    </div>
+    <div class="hero-lamina">
+      <picture>
+        <source media="(min-width: 861px)" srcset="img/hero/pliegue.jpg">
+        <img src="img/obra/pliegue.jpg" alt="Pliegue, colgado en un muro amplio y vacío" loading="lazy">
+      </picture>
+    </div>
+    <div class="hero-lamina">
+      <picture>
+        <source media="(min-width: 861px)" srcset="img/hero/junta.jpg">
+        <img src="img/obra/junta.jpg" alt="Junta, colgado en un muro amplio y vacío" loading="lazy">
+      </picture>
+    </div>
+    <div class="hero-lamina">
+      <picture>
+        <source media="(min-width: 861px)" srcset="img/hero/veladura.jpg">
+        <img src="img/obra/veladura.jpg" alt="Veladura, colgado en un muro amplio y vacío" loading="lazy">
+      </picture>
+    </div>
+    <div class="hero-texto">
+      <p class="eyebrow">Leticia de Amescua</p>
+      <h1 class="titulo">Materia, tiempo, silencio</h1>
+      <a class="enlace" href="obra.html">Ver la obra</a>
+    </div>
+    <div class="hero-mandos">
+      <button class="boton-pausa" type="button" data-pausa>Pausa</button>
+      <span data-cuenta aria-live="off">01 / 04</span>
+      <span class="flechas">
+        <button class="flecha" type="button" data-ant aria-label="Obra anterior">←</button>
+        <button class="flecha" type="button" data-sig aria-label="Obra siguiente">→</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="seccion rejilla declaracion revela">
+    <p class="eyebrow">Sobre la obra</p>
+    <div class="declaracion-texto">
+      <h2 class="titulo">Lo imperfecto también guarda luz.</h2>
+      <p class="lectura">Paisajes matéricos que evocan fachadas desgastadas, restos de estructuras o huellas de lo que fue. Un punto de equilibrio entre la paz y la fuerza, lo estructural y lo orgánico.</p>
+      <a class="enlace" href="biografia.html">Biografía</a>
+    </div>
+  </section>
+
+  <section class="zona-obra" data-carrusel aria-labelledby="t-disponible">
+    <div class="obra-cabeza revela">
+      <div>
+        <p class="eyebrow">Colección Silencio</p>
+        <h2 class="titulo-m" id="t-disponible">Obra disponible</h2>
+      </div>
+      <div class="flechas">
+        <button class="flecha" type="button" data-ant aria-label="Obras anteriores">←</button>
+        <button class="flecha" type="button" data-sig aria-label="Más obras">→</button>
+      </div>
+    </div>
+    <div class="carrusel" tabindex="0" aria-label="Obras disponibles" data-disponibles></div>
+    <p class="zona-obra-pie"><a class="enlace" href="catalogo.html?c=silencio">Ver catálogo completo</a></p>
+  </section>
+
+  <section class="banda" aria-labelledby="t-fragmento">
+    <picture>
+      <source media="(min-width: 861px)" srcset="img/hero/contencion.jpg">
+      <img src="img/obra/contencion.jpg" alt="Contención, colgado en un muro amplio y vacío" loading="lazy">
+    </picture>
+    <div class="banda-texto">
+      <p class="eyebrow">Para tu espacio</p>
+      <h2 class="titulo-m" id="t-fragmento">Un fragmento de fachada convertido en pintura</h2>
+      <p class="lectura">Escríbeme para recibir el catálogo actualizado o preguntar por una pieza.</p>
+      <a class="enlace" href="contacto.html?motivo=catalogo">Solicitar catálogo</a>
+    </div>
+  </section>
+
+  <section class="seccion ruido" aria-labelledby="t-ruido">
+    <div class="rejilla ruido-cabeza revela">
+      <p class="eyebrow">Colección Ruido</p>
+      <div>
+        <h2 class="titulo-m" id="t-ruido">En Ruido no pienso: dejo salir.</h2>
+        <p class="lectura">Figuras simples, casi esenciales, sostenidas por una lógica interna: <b>recta, clara, honesta</b>.</p>
+      </div>
+    </div>
+    <div class="ruido-rejilla" data-obras="coleccion:Ruido"></div>
+    <p class="ruido-pie"><a class="enlace" href="catalogo.html?c=ruido">Ver la colección</a></p>
+  </section>
+
+  <section class="partido" aria-labelledby="t-artista">
+    <div class="partido-imagen"><img src="img/leticia-taller.jpg" alt="Leticia de Amescua sostiene un gran lienzo matérico en su estudio, sobre un suelo hidráulico" loading="lazy"></div>
+    <div class="partido-texto revela">
+      <p class="eyebrow">La artista</p>
+      <h2 class="titulo-m" id="t-artista">Leticia de Amescua</h2>
+      <div class="lectura">
+        <p>Tras terminar los estudios de arquitectura en Madrid, compagina su labor en su estudio de arquitectura con una investigación plástica centrada en la materia, el tiempo y la memoria de los espacios.</p>
+      </div>
+      <a class="enlace" href="biografia.html">Leer biografía</a>
+    </div>
+  </section>
+
+  <section class="seccion rejilla espacios" aria-labelledby="t-espacios">
+    <p class="eyebrow revela">La obra en el espacio</p>
+    <h2 class="titulo-m espacios-titulo revela" id="t-espacios">Entre la arquitectura y el arte</h2>
+    <figure class="espacio e-a revela">
+      <img src="img/sala/pliegue.jpg" alt="Pliegue en la exposición de Casa Chamberí" loading="lazy">
+      <figcaption>Casa Chamberí, Madrid. Foto: Alba Vigaray.</figcaption>
+    </figure>
+    <figure class="espacio e-b revela">
+      <img src="img/sala/velos-blanco.jpg" alt="Serie Velos en blanco en la exposición de Casa Chamberí" loading="lazy">
+      <figcaption>Casa Chamberí, Madrid. Foto: Alba Vigaray.</figcaption>
+    </figure>
+    <figure class="espacio e-c revela">
+      <img src="img/sala/contencion.jpg" alt="Contención en la exposición de Casa Chamberí" loading="lazy">
+      <figcaption>Casa Chamberí, Madrid. Foto: Alba Vigaray.</figcaption>
+    </figure>
+  </section>
+
+  <section class="seccion rejilla" style="padding-top:0" aria-labelledby="t-press">
+    <div class="press-cabeza revela">
+      <p class="eyebrow">Press</p>
+      <h2 class="titulo-m" id="t-press">En prensa</h2>
+    </div>
+    <ul class="press-filas revela" data-prensa></ul>
+  </section>
+
+  <section class="banda" aria-labelledby="t-persona">
+    <picture>
+      <source media="(min-width: 861px)" srcset="img/hero/encuentro.jpg">
+      <img src="img/obra/encuentro.jpg" alt="Encuentro, colgado en un muro amplio y vacío" loading="lazy">
+    </picture>
+    <div class="banda-texto">
+      <p class="eyebrow">En persona</p>
+      <h2 class="titulo-m" id="t-persona">La textura cambia con la luz y el lugar</h2>
+      <p class="lectura">Para ver una obra de cerca, pide cita.</p>
+      <a class="enlace" href="contacto.html?motivo=cita">Pedir cita</a>
+    </div>
+  </section>
+
+</main>
+<script src="js/datos.js"></script>
+<script src="js/sitio.js"></script>
+</body>
+</html>
